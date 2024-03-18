@@ -1,0 +1,19 @@
+def get_response(user_input):
+    if "hello" in user_input.lower():
+        return "Hello! How can I assist you today?"
+    elif "how are you" in user_input.lower():
+        return "I'm just a bot, but thanks for asking!"
+    elif "bye" in user_input.lower():
+        return "Goodbye! Have a great day!"
+    else:
+        return "I'm sorry, I didn't understand that."
+
+def main():
+    print("Welcome to the Rule-Based Chatbot!")
+    while True:
+        user_input = input("You: ")
+        response = get_response(user_input)
+        print("Bot:", response)
+
+if __name__ == "__main__":
+    main()
